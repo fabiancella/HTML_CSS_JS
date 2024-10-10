@@ -1,0 +1,62 @@
+body{ /* alignment of calculator */
+    margin: 0;
+    display: flex; /* flex with the scree zoom */
+    justify-content: center; /* horizontal alignment */
+    align-items: center; /* vertical alignment */
+    height: 100vh; /* evenly distributes the viewport */
+}
+
+#calculator{ /* the entire calc formatting, notice the id in the HTML file */
+    font-family: arial, sans-serif; 
+    background-color: hsl(0, 0%, 15%); 
+    border-radius: 15px; /* rounds the border */
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{ /* calc display */
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys{ /* key containers */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{ /* buttons */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover{ /* all button with the hover psuedoclass */
+    background-color: hsl(0, 0%, 40%);
+
+}
+button:active{ /* all buttons being pressed */
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{ /* class for the operators */
+    background-color: hsl(43, 100%, 50%);
+}
+.operator-btn:hover{  /* hover function */
+    background-color: hsl(43, 100%, 50%);
+}
+.operator-btn:active{ /* click funciton (active) */
+    background-color: hsl(43, 100%, 75%);
+}
+
